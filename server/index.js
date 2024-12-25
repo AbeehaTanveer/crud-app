@@ -7,8 +7,13 @@ const app = express();
 app.use(express.json());
 
 
-
-app.use(cors()); // Apply the CORS configuration
+app.use(cors(
+  {
+origin:["https://crud-app-8xaw.vercel.app"],
+methods:["POST","GET","DELETE","PUT"],
+credentials:true
+  }
+  ));
 
 const PORT = process.env.PORT || 8080;
 
