@@ -29,7 +29,7 @@ axios.defaults.withCredentials = true;
 
   const GetData = async () => {
     try {
-      const fetchData = await axios.get("https://crud-c2m7.vercel.app/get");
+      const fetchData = await axios.get("https://crud-app-blond-three.vercel.app/get");
       setGetUser(fetchData.data);
       console.log("Fetch Data:", fetchData.data);
     } catch (error) {
@@ -44,7 +44,7 @@ axios.defaults.withCredentials = true;
 
   const handleDelete = async (id) => {
     try {
-      const response =await axios.delete(`https://crud-c2m7.vercel.app/delete/${id}`);
+      const response =await axios.delete(`https://crud-app-blond-three.vercel.app/delete/${id}`);
       setGetUser((prev) => {
        return prev.filter((item) => item._id !== id);
       });

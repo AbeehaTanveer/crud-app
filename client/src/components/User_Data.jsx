@@ -47,7 +47,7 @@ const HandleAddUser = async() => {
 
 try {
 
-  const response=await axios.post("https://crud-c2m7.vercel.app/create",formData)
+  const response=await axios.post("https://crud-app-blond-three.vercel.app/create",formData)
   console.log("Data is Send Successfully",response)
  
   setFormData("")

@@ -38,7 +38,7 @@ axios.defaults.withCredentials = true;
 useEffect(() => {
   const fetchData = async () => {
     try {
-      const res = await axios.get(`https://crud-c2m7.vercel.app/getOne/${id}`);
+      const res = await axios.get(`https://crud-app-blond-three.vercel.app/getOne/${id}`);
       if (res.data) {
         setFormData(res.data);
       } else {
@@ -56,7 +56,7 @@ useEffect(() => {
 const EditData=async()=>{
   try {
       
-      const res=await axios.put(`https://crud-c2m7.vercel.app/update/${id}`,formData)
+      const res=await axios.put(`https://crud-app-blond-three.vercel.app/update/${id}`,formData)
       
       // setFormData((prev)=>({
       //   ...prev,
